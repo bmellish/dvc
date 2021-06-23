@@ -57,14 +57,14 @@ stages:
         train.seed: 20170428
     outs:
     - path: models/model.pth
-      md5: fe4be2a8b4486b4bd88f513d5661da22
+      md5: ec9a0c8cb5441feebb4e38dd1f30d922
       size: 2015
   evaluate:
     cmd: python src/evaluate.py models/model.pth processed_data/features scores.json
       prc.json roc.json
     deps:
     - path: models/model.pth
-      md5: fe4be2a8b4486b4bd88f513d5661da22
+      md5: ec9a0c8cb5441feebb4e38dd1f30d922
       size: 2015
     - path: processed_data/features
       md5: 72f5abd169058dad1680dbcb4bfc103a.dir
@@ -75,11 +75,11 @@ stages:
       size: 2899
     outs:
     - path: prc.json
-      md5: 57efbf0f8ef7a4fb4cb0c7c8a4ee4984
-      size: 281
+      md5: 403bac0ea363a5b3d6c940b19a45b1a2
+      size: 279
     - path: roc.json
-      md5: 641a0b3609ca64d7ae1197e0b3404df7
-      size: 347
+      md5: 9e52d02c6ab23855d6f5b8b8faa4bb95
+      size: 345
     - path: scores.json
-      md5: dd9149136bd37e874d9023d53d328dd5
+      md5: 8dce258c7ee28a6ecc69179c4394ada8
       size: 73
