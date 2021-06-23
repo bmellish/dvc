@@ -1,12 +1,12 @@
 schema: '2.0'
 stages:
   prepare:
-    cmd: python src/prepare.py data/train.csv data/test.csv
+    cmd: python src/prepare.py data2/train2.csv data2/test2.csv
     deps:
-    - path: data/test.csv
+    - path: data2/test2.csv
       md5: 029c9cd22461f6dbe8d9ab01def965c6
       size: 28629
-    - path: data/train.csv
+    - path: data2/train2.csv
       md5: 61fdd54abdbf6a85b778e937122e1194
       size: 61194
     - path: src/prepare.py
